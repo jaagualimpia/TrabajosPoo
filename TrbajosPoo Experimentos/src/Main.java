@@ -1,8 +1,7 @@
-import Soldados.*;
-import Soldados.FuncionesSobreSoldados.CreacionSoldado;
-import Soldados.FuncionesSobreSoldados.RangoConMasSoldados;
+import Soldados.SoldadoEjercito;
+import Soldados.General;
+import Soldados.FuncionesSobreSoldados.*;
 import UIsoldados.*;
-
 import java.util.ArrayList;
 import java.util.Scanner;
 
