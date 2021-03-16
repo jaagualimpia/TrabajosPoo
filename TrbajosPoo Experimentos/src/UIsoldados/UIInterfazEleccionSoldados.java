@@ -5,6 +5,7 @@ import Soldados.SoldadoEjercito;
 import java.util.ArrayList;
 
 public class UIInterfazEleccionSoldados {
+    private static int opcionDevolverse;
 
     public static void menuInicial(){
         System.out.println("-----------------------------------------------");
@@ -33,6 +34,7 @@ public class UIInterfazEleccionSoldados {
         for (int i = 0; i < soldadosVigentes.size(); i++) {
             System.out.println(i+". Nombre: "+ soldadosVigentes.get(i).getNombre()+", Rango: " + soldadosVigentes.get(i).getRango());
         }
-        System.out.println("");
+        int opcionDevolverse = soldadosVigentes.size() + 1;
+        System.out.println(opcionDevolverse + ". Devolverse");
     }
 }

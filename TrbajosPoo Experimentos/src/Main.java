@@ -29,15 +29,17 @@ public class Main {
                 }
                 break;
             case 2:
-                if(soldadosDelEjercitoVigentes.size() != 0){
-                    System.out.println("Ingresa el numero del soldado que quieres eliminar");
+                if(!soldadosDelEjercitoVigentes.isEmpty()){
+                    System.out.println("Ingresa el numero del soldado que dar de baja:");
                     UIInterfazEleccionSoldados.menuEliminarSoldado(soldadosDelEjercitoVigentes);
                     soldadoParaEliminar = sc.nextInt();
-                    soldadosDelEjercitoVigentes.get(soldadoParaEliminar).eliminar();
-                    soldadosDelEjercitoVigentes.remove(soldadoParaEliminar);
+                    if (soldadoParaEliminar < soldadosDelEjercitoVigentes.size()){
+                        soldadosDelEjercitoVigentes.get(soldadoParaEliminar).eliminar();
+                        soldadosDelEjercitoVigentes.remove(soldadoParaEliminar);
+                    }
                 }else{
                     System.out.println("-----------------------------------------------");
-                    System.out.println("No hay soldados enlistados para eliminar");
+                    System.out.println("No hay soldados enlistados para dar de baja");
                 }
                 break;
             case 3:
