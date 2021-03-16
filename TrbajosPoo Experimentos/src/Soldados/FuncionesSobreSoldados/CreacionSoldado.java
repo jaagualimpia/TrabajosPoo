@@ -11,9 +11,9 @@ public class CreacionSoldado {
     private static SoldadoEjercito soldadoCreadoNuevo;
 
     public static SoldadoEjercito soldadoCreado (int eleccion){
-
+        // Pregunta nombre del soldado
         preguntaDatosSoldado();
-        switch (eleccion){
+        switch (eleccion){ // Escoge segun el rango que se haya seleccionado
             case 1:
                 soldadoCreadoNuevo = new Cabo(nombreRellenar, "Cabo");
                 break;

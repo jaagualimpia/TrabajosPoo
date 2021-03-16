@@ -15,8 +15,10 @@ public class RangoConMasSoldados {
 
     public static String rangoMasPopular(ArrayList<SoldadoEjercito> soldadosVigentes){
 
+            // Se obtiene el rango con mayor cantidad de soldados
             valorMasAlto = Math.max(Cabo.getCantidadCabos(), Math.max(Sargento.getCantidadSargento(), Math.max(Subteniente.getCantidadSubteniente(), Math.max(Teniente.getCantidadTeniente(), Math.max(Mayor.getCantidadMayor(), General.getCantidadGenerales())))));
 
+            // Se ingresa como string el rango con mas soldados
             if(valorMasAlto == Cabo.getCantidadCabos()){
                     rangoConMasMiembros = "Cabo";
             }else if (valorMasAlto == Sargento.getCantidadSargento()){

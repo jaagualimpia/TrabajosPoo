@@ -37,6 +37,7 @@ public class SoldadoEjercito {
         cantidadSoldados--;
         System.out.println("Se ha dado de baja al "+ rango + " " + nombre);
 
+        // disminuye la cantidad segun el rango
         if(rango == "General"){
             cantidadGenerales--;
         }else if(rango == "Cabo"){
