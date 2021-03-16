@@ -19,12 +19,12 @@ public class UIInterfazEleccionSoldados {
     public static void menuCrearSoldado(){ // Imprime menu para crear soldados
         System.out.println("------------------------------------------------");
         System.out.println("Ingrese que tipo de soldado quiere agregar:\n");
-        System.out.println("1. Cabo");
-        System.out.println("2. Sargento");
-        System.out.println("3. Subteniente");
-        System.out.println("4. Teniente");
-        System.out.println("5. Mayor");
-        System.out.println("6. General");
+        System.out.println("1. Cabo - Salario: 1000000");
+        System.out.println("2. Sargento - Salario: 1000000");
+        System.out.println("3. Subteniente - Salario: 1000000");
+        System.out.println("4. Teniente - Salario: 1000000");
+        System.out.println("5. Mayor - Salario: 1000000");
+        System.out.println("6. General - Salario: 2000000");
         System.out.println("7. Devolverse");
     }
 
