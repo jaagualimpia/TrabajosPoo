@@ -53,7 +53,7 @@ public class Telefono extends Usuario implements RecargaMovil {
         minutos += minutosDeseados;
         dineroDisponible = dineroDisponible - (Math.round(minutosDeseados/5));
         System.out.println("Minutos actuales: " + minutos);
-        System.out.println("Saldo actual: " + dineroDisponible + "USD");
+        System.out.println("Saldo actual: " + dineroDisponible + " USD");
     }
 
     @Override

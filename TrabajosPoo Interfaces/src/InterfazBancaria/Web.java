@@ -57,7 +57,7 @@ public class Web extends Usuario implements Transferencia {
         if(validacionDestinatario(usuariosBanco)){
             System.out.println("----------------------------------------------------------");
             System.out.println("Cuanto dinero deseas enviar");
-            System.out.println("Saldo actual: " + dineroDisponible + "USD");
+            System.out.println("Saldo actual: " + dineroDisponible + " USD");
             dineroTransferencia = sc.nextInt();
             dineroDisponible -= dineroTransferencia;
             usuarioTransferirDinero.dineroDisponible += dineroTransferencia;
@@ -69,8 +69,8 @@ public class Web extends Usuario implements Transferencia {
 
     private void consultarDatos() {
         System.out.println("----------------------------------------------------------");
-        System.out.println("Saldo actual de la cuenta: " + dineroDisponible + "USD");
-        System.out.println("Credito adeudado: " + cantidadCredito + "USD");
+        System.out.println("Saldo actual de la cuenta: " + dineroDisponible + " USD");
+        System.out.println("Credito adeudado: " + cantidadCredito + " USD");
     }
 
     private void solicitarCredito(){
