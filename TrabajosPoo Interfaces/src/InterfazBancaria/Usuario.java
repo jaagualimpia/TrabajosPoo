@@ -13,7 +13,6 @@ public abstract class Usuario {
     protected int opcion;
     protected int minutos;
     protected int indexUsuario;
-    protected int idDestino;
     protected int cantidadCredito;
 
     public Usuario(int idUsuario, int numeroTelefono, int dineroDisponible, int clave, int minutos, int cantidadCredito) {

@@ -23,10 +23,6 @@ public class Web extends Usuario implements Transferencia {
         }
     }
 
-    public Web(int idUsuario, int numeroTelefono, int dineroDisponible, int clave, int minutos, int cantidadCredito) {
-        super(idUsuario, numeroTelefono, dineroDisponible, clave, minutos, cantidadCredito);
-    }
-
     private void seleccionOpcionWeb(){
         UInterfacesAplicacion.opcionesWeb();
         opcion = sc.nextInt();

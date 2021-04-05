@@ -11,10 +11,6 @@ public class Telefono extends Usuario implements RecargaMovil {
 
     private int minutosDeseados;
 
-    public Telefono(int idUsuario, int numeroTelefono, int dineroDisponible, int clave, int minutos, int cantidadCredito) {
-        super(idUsuario, numeroTelefono, dineroDisponible, clave, minutos, cantidadCredito);
-    }
-
     public Telefono (ArrayList<Usuario> usuariosBanco){
         validacionCredenciales();
         if(validarUsuario(usuariosBanco)){
