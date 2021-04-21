@@ -1,3 +1,12 @@
+/*
+* Trabajo interfaces POO
+* Jorge Andres Agualimpia Caicedo
+* Andres Escobar Echeverri
+* Jhonny Samuell Aponte
+*/
+
+
+
 import InterfazBancaria.Cajero;
 import InterfazBancaria.Telefono;
 import InterfazBancaria.Usuario;
