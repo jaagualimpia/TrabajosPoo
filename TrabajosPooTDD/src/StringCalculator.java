@@ -207,7 +207,7 @@ public class StringCalculator {
         public int add(String numbers){
         int sumatoria = 0;
         String nuevoDelimitador="___";
-        ArrayList<String> contenedorDelimitadores = new ArrayList<String>();
+        ArrayList<String> contenedorDelimitadores = new ArrayList<>();
 
         if(numbers.isEmpty()){
             sumatoria = 0;
@@ -227,36 +227,28 @@ public class StringCalculator {
 
                             String palabraTemporal;
                             palabraTemporal = stRemplazo.nextToken();
-                            System.out.println(palabraTemporal);
 
                             if(!(nuevoDelimitador.isEmpty())){
                                 contenedorDelimitadores.add(nuevoDelimitador);
-                                System.out.println("Esto hay dentro del nuevoDelimitador" + nuevoDelimitador);
                                 nuevoDelimitador = "";
                             }
 
                             for (int j = 0; j < palabraTemporal.length(); j++) {
                                 if(palabraTemporal.charAt(j)!= '/' && palabraTemporal.charAt(j)!= '\n' && palabraTemporal.charAt(j)!= '['){
-                                    System.out.println(palabraTemporal);
                                     nuevoDelimitador += palabraTemporal.charAt(j);
                                     break;
                                 }else{
-                                    System.out.println("Se ha encontrado el salto de linea" + nuevoDelimitador);
                                     if(palabraTemporal.charAt(j) == '\n'){
                                         break;
                                     }
                                 }
                             }
-                            continue;
                         }
                     }
                 }
             }
 
-            System.out.println(numbers);
-
             for (String delimitador : contenedorDelimitadores) {
-                System.out.println("Se va a remplazar" + delimitador);
                 numbers = numbers.replace(delimitador, ",");
             }
 
@@ -266,11 +258,8 @@ public class StringCalculator {
             numbers = numbers.replace(nuevoDelimitador, ",");
             numbers = numbers.replace('\n', ',');
 
-            System.out.println(numbers);
-
             StringTokenizer st = new StringTokenizer(numbers, ",");
 
-            System.out.println(numbers);
             while(st.hasMoreTokens()){
                 int numeroParaSumar = Integer.parseInt(st.nextToken());
                 if(numeroParaSumar < 0){
